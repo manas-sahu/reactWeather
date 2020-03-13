@@ -19,7 +19,7 @@ class App extends Component {
     this.setState({ weatherData: result.data })
   }
   getDailyForecast = async text => {
-   let result = await Axios.get(`http://api.openweathermap.org/data/2.5/forecast?q=${text}&units=metric&APPID=bf5b518d43427be14221c96fecf1e3c2`);
+   let result = await Axios.get(`https://api.openweathermap.org/data/2.5/forecast?q=${text}&units=metric&APPID=bf5b518d43427be14221c96fecf1e3c2`);
     this.setState({ dailyForecastData: result.data })
   }
   render() {
