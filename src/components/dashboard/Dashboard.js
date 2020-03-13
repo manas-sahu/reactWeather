@@ -1,12 +1,12 @@
 import React from 'react'
-import { Search } from '../search/Search'
 import { CurrentWeather } from './CurrentWeather'
+import { DailyForecastList } from './forecast/DailyForecastList'
 
-export const Dashboard = ({weatherData}) => {
+export const Dashboard = ({ weatherData, dailyForecastData }) => {
     return (
         <div>
-             <Search />
-             <CurrentWeather weatherData={weatherData}/>
+            <CurrentWeather weatherData={weatherData} />
+            <DailyForecastList dailyForecastData={dailyForecastData} />
         </div>
     )
 }

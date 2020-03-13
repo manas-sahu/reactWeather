@@ -8,6 +8,14 @@ body{
 .header {
     height: 100px;
 }
+.search-center{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+}
 
 .brand {
     overflow-x: hidden;
@@ -42,6 +50,7 @@ body{
     vertical-align: middle;
 }
 
+
 .current-weather-display .weather-min-max-temp {
     font-size: 1rem;
     vertical-align: middle;    
@@ -65,4 +74,8 @@ body{
 .current-weather-display .weather-update {
     font-size: 0.8rem;
     vertical-align: middle;
+}
+
+.card{
+    background-color: seagreen !important;
 }
