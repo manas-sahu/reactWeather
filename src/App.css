@@ -1,38 +1,68 @@
-.App {
-  text-align: center;
+
+body{
+    color: whitesmoke;
+    height: 100%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Header */
+.header {
+    height: 100px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.brand {
+    overflow-x: hidden;
+    min-width: 300px;
+    text-align: center;
+    width: 100%;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.brand-icon {
+    color:whitesmoke;
+    vertical-align: middle;
 }
 
-.App-link {
-  color: #61dafb;
+.brand-text {
+    color: whitesmoke;
+    font-size: 2rem;
+    margin-left: 20px;
+    vertical-align: middle;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Current Weather  */
+.current-weather-display {
+    background-color: #ECEFF1;    
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+    color: grey;
+}
+
+.current-weather-display .weather-location {
+    font-size: 1rem;
+    vertical-align: middle;
+}
+
+.current-weather-display .weather-min-max-temp {
+    font-size: 1rem;
+    vertical-align: middle;    
+}
+
+.current-weather-display .weather-current .weather-temp {
+    font-size: 3rem;
+    vertical-align: middle;
+}
+
+.current-weather-display .weather-condition .weather-icon {
+    height: 4rem;
+    vertical-align: middle;
+}
+
+.current-weather-display .weather-condition .weather-description {
+    font-size: 1.4rem;
+    vertical-align: middle;
+}
+
+.current-weather-display .weather-update {
+    font-size: 0.8rem;
+    vertical-align: middle;
 }
